@@ -1,0 +1,38 @@
+{
+  "name": "este-getting-started",
+  "version": "0.1.0",
+  "description": "Getting started sample for Este",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node server",
+    "test": "gulp dist --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reinhard/este-getting-started.git"
+  },
+  "author": "Reinhard Pötz",
+  "license": "Apache License 2.0",
+  "homepage": "http://reinhardpoetz.com",
+  "dependencies": {
+    "express": "^4.1.0",
+    "express-http-proxy": "^0.3.0"
+  },
+  "devDependencies": {
+    "bower": "1.3.12",
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.6.2",
+    "gulp-bg": "0.0.5",
+    "gulp-este": "^1.0.1",
+    "gulp-minify-html": "^0.1.6",
+    "gulp-replace": "^0.5.0",
+    "rimraf": "^2.2.8",
+    "run-sequence": "^1.0.1",
+    "yargs": "^1.2.1"
+  },
+  "engines": {
+    "node": "v0.10.x"
+  },
+  "subdomain": "este-getting-started"
+}

@@ -1,0 +1,16 @@
+app/client/build
+app/client/dist
+app/client/css/*.css
+**.js~
+target
+.settings
+.classpath
+.project
+bin
+cocoon-files
+.metadata
+.recommenders
+bower_components/
+node/
+node_modules/
+tmp/

@@ -1,0 +1,13 @@
+{
+  "name": "este-getting-started",
+  "version": "0.1.0",
+  "homepage": "https://github.com/reinhard/este-getting-started",
+  "authors": [
+    "Reinhard Pötz <reinhard@apache.org>"
+  ],
+  "license": "Apache License 2.0",
+  "private": true,
+  "dependencies": {
+    "este-library": "git://github.com/steida/este-library.git"
+  }
+}
