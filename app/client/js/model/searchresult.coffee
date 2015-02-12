@@ -3,15 +3,12 @@ goog.provide 'app.model.SearchResult'
 class app.model.SearchResult
 
   ###*
-    @param {Object=} json
     @constructor
   ###
-  constructor: (json) ->
-    (
-      goog.mixin @, json
-    ) if json
+  constructor: (value) ->
+    @value = value
 
   ###*
-    @type {number}
+    @type {string}
   ###
-  count: 0
+  value: ''

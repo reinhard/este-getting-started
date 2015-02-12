@@ -11,8 +11,3 @@ class app.model.SearchRequest
     @type {string}
   ###
   query: ''
-
-  ###*
-    @type {string}
-  ###
-  parentProjectId: ''

@@ -11,4 +11,5 @@ class app.Actions
   @SEARCH: 'search'
 
   search: (searchRequest) ->
-    @dispatcher.dispatch Actions.SEARCH, {}
+    resultValue = searchRequest.query.toUpperCase()
+    @dispatcher.dispatch Actions.SEARCH, new app.model.SearchResult resultValue

@@ -35,5 +35,5 @@ class app.Store extends este.Store
     @param {app.model.SearchResult} result
   ###
   search: (result) ->
-    @searchResult = new app.model.SearchResult result
+    @searchResult = result
     @notify()

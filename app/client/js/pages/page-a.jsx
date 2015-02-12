@@ -18,7 +18,7 @@ app.pages.PageA = function(actions, store) {
     displayName: 'PageA',
 
     handleQueryChange: function(event) {
-      store.searchRequest.query = event.target.value.toUpperCase();
+      store.searchRequest.query = event.target.value;
       this.forceUpdate();
     },
 
@@ -28,8 +28,26 @@ app.pages.PageA = function(actions, store) {
     },
 
     render: function() {
+      var resultValue = store.searchResult.value;
+      var resultPanel;
+      if(resultValue) {
+        resultPanel = <p>resultValue: {resultValue}</p>
+      }
+
       return (
-         <div>This is Page A.</div>
+         <div>
+           <p>This is Page A.</p>
+
+           <form onSubmit={this.handleSearch}>
+             <input value={store.searchRequest.query}
+               onChange={this.handleQueryChange}
+               type='text'
+               autoFocus='true'/>
+               <button>search</button>
+           </form>
+           
+           {resultPanel}
+        </div>
       );
     }
 
