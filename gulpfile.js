@@ -145,6 +145,7 @@ gulp.task('watch', function() {
     coffee: 'coffee',
     css: 'livereload-notify',
     js: 'js',
+    'js~': 'js',
     jsx: 'jsx',
     styl: 'stylus'
   }, function(task) {
